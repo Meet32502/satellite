@@ -217,7 +217,7 @@ with col2:
         
         # Confidence bar
         confidence_normalized = confidence / 100
-        st.progress(confidence_normalized)
+        st.progress(float(confidence_normalized))
         
         # Class description
         st.markdown(f"**Description:** {class_info[predicted_class]['description']}")
